@@ -1,21 +1,20 @@
 [custom]
-ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list # 本地网络
-ruleset=DIRECT,[]GEOIP,CN,no-resolve
-ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list # 中国 IP
-ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list # 中国云服务器
-ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list # 中国域名
-ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list # 中国媒体
-ruleset=DIRECT,https://raw.githubusercontent.com/ItsFimall/ClashRuleset/main/Direct.list # 其他疏漏
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+ruleset=DIRECT,https://raw.githubusercontent.com/ItsFimall/ClashRuleset/main/Direct.list
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BanAD.list
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BanEasyList.list
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BanEasyListChina.list
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BanEasyPrivacy.list
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BanProgramAD.list
+ruleset=DIRECT,[]GEOIP,CN,no-resolve
 ruleset=Other,[]FINAL
 
-custom_proxy_group=Proxy`select`[]Auto`[]DIRECT`.*
+custom_proxy_group=Proxy`select`[]DIRECT`.*
 custom_proxy_group=Other`select`[]Proxy`[]DIRECT`
-custom_proxy_group=Auto`url-test`.*`http://www.v2ex.com/generate_204`300,,50
 
 enable_rule_generator=true
 overwrite_original_rules=true
