@@ -23,7 +23,7 @@ ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ru
 ruleset=DIRECT,[]GEOIP,CN,no-resolve
 ruleset=Other,[]FINAL
 
-custom_proxy_group=Proxy`select`[]Auto`[]DIRECT`.*
+custom_proxy_group=Proxy`select`[]DIRECT`.*
 custom_proxy_group=Other`select`[]Proxy`[]DIRECT`
 
 enable_rule_generator=true
