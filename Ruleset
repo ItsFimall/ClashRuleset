@@ -12,7 +12,7 @@ ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ru
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BanEasyListChina.list
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BanEasyPrivacy.list
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BanProgramAD.list
-ruleset-DIRECT,https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Download.list
+ruleset=DIRECT,https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/Download.list
 ruleset=Proxy,[]FINAL
 
 custom_proxy_group=Proxy`select`[]Auto`[]DIRECT`.*
