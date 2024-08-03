@@ -1,5 +1,4 @@
 [custom]
-ruleset=DIRECT,[]GEOIP,CN,no-resolve
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list # 本地网络
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list # 中国云服务器
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list # 中国域名
@@ -13,6 +12,7 @@ ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ru
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BanEasyListChina.list
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BanEasyPrivacy.list
 ruleset=REJECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BanProgramAD.list
+ruleset=DIRECT,[]GEOIP,CN,no-resolve
 ruleset=Proxy,[]FINAL
 
 custom_proxy_group=Proxy`select`[]Auto`[]DIRECT`.*
