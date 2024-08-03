@@ -1,13 +1,19 @@
 # CS2
-DOMAIN-KEYWORD,steamchina # Steam China 蒸汽平台
-DOMAIN-KEYWORD,5eplay # 5e 对战平台
-DOMAIN-SUFFIX,wmpvp.com # 完美对战平台
-DOMAIN-SUFFIX,csgod.top # GOD 社区服
+# Steam China 蒸汽平台
+DOMAIN-KEYWORD,steamchina
+# 5e 对战平台
+DOMAIN-KEYWORD,5eplay
+# 完美对战平台
+DOMAIN-SUFFIX,wmpvp.com
+# GOD 社区服
+DOMAIN-SUFFIX,csgod.top
 
-# 网盘
-DOMAIN-KEYWORD,123pan # 123PAN
-DOMAIN-SUFFIX,lanzou.com # 蓝奏云
-DOMAIN-SUFFIX,woozooo.com # Credit: https://greasyfork.org/en/scripts/419224-%E8%93%9D%E5%A5%8F%E4%BA%91%E7%BD%91%E7%9B%98%E5%A2%9E%E5%BC%BA/code @X.I.U
+# 123网盘
+DOMAIN-KEYWORD,123pan
+
+# 蓝奏云
+# Credit: https://greasyfork.org/en/scripts/419224-%E8%93%9D%E5%A5%8F%E4%BA%91%E7%BD%91%E7%9B%98%E5%A2%9E%E5%BC%BA/code @X.I.U
+DOMAIN-SUFFIX,lanzou.com
 DOMAIN-SUFFIX,woozooo.com
 DOMAIN-SUFFIX,lanzoub.com
 DOMAIN-SUFFIX,lanzoue.com
