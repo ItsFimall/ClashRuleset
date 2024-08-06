@@ -1,11 +1,35 @@
-[custom]
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16 
+  fake-ip-filter: 
+     - '*.lan'
+     - localhost.ptlogin2.qq.com
+  nameserver:
+     - https://doh.pub/dns-query
+     - https://dns.alidns.com/dns-query
+  fallback:
+     - tls://dns.rubyfish.cn:853
+     - tls://1.0.0.1:853
+     - tls://dns.google:853
+     - https://dns.rubyfish.cn/dns-query
+     - https://cloudflare-dns.com/dns-query
+     - https://dns.google/dns-query
+  fallback-filter:
+     geoip: true
+     ipcidr:
+       - 240.0.0.0/4
+
+
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 ruleset=DIRECT,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
 ruleset=DIRECT,https://raw.githubusercontent.com/ItsFimall/ClashRuleset/main/Direct.list
-ruleset=Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/ProxyGFWlist.list
+ruleset=Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
 ruleset=Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list
 ruleset=Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bing.list
 ruleset=Proxy,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Apple.list
